@@ -33,7 +33,7 @@ This is a job finder web application built using the MERN (MongoDB, Express.js, 
 
 To run the MERN Stack Job Finder project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/technops-chirag/Job-Finder-Webapp.git`
+1. Clone the repository: `git clone https://github.com/techops-chirag/Job-Finder-Webapp.git`
 2. Navigate to the project directory: `cd Job-Finder-Webapp`
 3. Install the dependencies:
    - Front-end: `cd client && npm install`
