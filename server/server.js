@@ -36,6 +36,11 @@ app.use(router);
 //error middleware
 app.use(errorMiddleware);
 
+
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
+
 app.listen(PORT, () => {
   console.log(`Dev Server running on port: ${PORT}`);
 });

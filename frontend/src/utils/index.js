@@ -1,6 +1,6 @@
 import axios from 'axios';
-const API_URL = 'http://localhost:8080/api-v1';
-
+const API_URL = 'import.meta.env.VITE_API_BASE_URL';
+fetch(`${API_URL}/api/jobs`);
 export const API = axios.create({
     baseURL: API_URL,
     responseType: 'json',
@@ -16,7 +16,6 @@ export const apiRequest = async({url, token, data, method}) => {
         Authorization: token ? `Bearer ${token}` : "",
             }
         });
-
         return result.data;
     } catch (error) {
         const err = error.response.data;
